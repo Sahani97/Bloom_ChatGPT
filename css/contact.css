@@ -1,0 +1,122 @@
+/* Contact Page Styles */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f8f9fa, #e9f7ef);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    font-family: 'BrittanySignature', cursive;
+    font-size: 3.5em;
+    color: #2F4F4F;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Layout */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-right {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Contact Image */
+.contact-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+    transform: scale(1.03);
+}
+
+/* Contact Info */
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contact-details li {
+    padding: 5px 0;
+    color: #4CAF50;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #4CAF50, #388e3c);
+    color: white;
+    padding: 14px 30px; /* Slightly larger */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.1em; /* Increased font size */
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #45a049, #2e7d32);
+    transform: translateY(-3px) scale(1.08); /* Enhanced animation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+    .contact-content {
+        flex-direction: column;
+    }
+}

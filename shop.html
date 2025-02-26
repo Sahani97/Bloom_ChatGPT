@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Bloom</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <img src="assets/images/logo.png" alt="Bloom Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="shop">
+        <h1>Shop</h1>
+        <p class="intro">Browse our selection of beautiful plants and find the perfect addition to your home.</p>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <select id="category-filter" onchange="filterPlants()">
+                <option value="all">All</option>
+                <option value="beginner">Beginner Plants</option>
+                <option value="longlasting">Long Lasting Plants</option>
+                <option value="lowlight">Low Sunlight Plants</option>
+                <option value="droughtresistant">Drought-resistant Plants</option>
+            </select>
+
+            <select id="sort-filter" onchange="sortPlants()">
+                <option value="feature">Feature</option>
+                <option value="low-to-high">Price - Low to High</option>
+                <option value="high-to-low">Price - High to Low</option>
+            </select>
+        </div>
+
+        <!-- Shop Grid -->
+        <section class="shop-grid" id="shop-grid">
+            <!-- Plant items will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="assets/images/logo.png" alt="Bloom Logo" class="footer-logo">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <p>&copy; 2025 Bloom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tips - Bloom</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tips.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <img src="assets/images/logo.png" alt="Bloom Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html" class="active">Tips</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="tips">
+        <h1>Plant Tips</h1>
+        <p class="intro">Discover helpful tips and advice to keep your plants thriving. Click on a category to learn more about each type of plant!</p>
+
+        <!-- Tip Categories -->
+        <section class="tip-categories">
+            <div class="tip-card" data-category="beginners">
+                <h2>Easy to Maintain Plants for Beginners</h2>
+                <p>Hardy, low-maintenance options that thrive with minimal care.</p>
+            </div>
+            <div class="tip-card" data-category="longlasting">
+                <h2>Flowers That Last Long</h2>
+                <p>Keep your home vibrant with blooms known for their staying power.</p>
+            </div>
+            <div class="tip-card" data-category="lowlight">
+                <h2>Plants for Apartments with Low Sunlight</h2>
+                <p>Indoor plants that thrive in low-light conditions.</p>
+            </div>
+            <div class="tip-card" data-category="droughtresistant">
+                <h2>Plants That Don’t Need To Be Watered Often</h2>
+                <p>Drought-tolerant plants perfect for busy schedules.</p>
+            </div>
+        </section>
+
+        <!-- Detail View Section -->
+        <section class="detail-view" id="detail-view">
+            <button class="close-detail" onclick="closeDetail()">×</button>
+            <h2 class="detail-title"></h2>
+            <div class="plant-grid" id="plant-grid">
+                <!-- Plant details will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="assets/images/logo.png" alt="Bloom Logo" class="footer-logo">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <p>&copy; 2025 Bloom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/tips.js"></script>
+</body>
+</html>
